@@ -10,7 +10,7 @@
 A pretty `tail -F` for structured text. Point prettytail at a file and watch it<br>
 rendered beautifully in your terminal — live, as the file grows.
 
-![release](https://img.shields.io/badge/release-v0.1.4-00725e)
+![release](https://img.shields.io/badge/release-v0.1.5-00725e)
 ![go](https://img.shields.io/badge/go-%E2%89%A5%201.26-6ecd96)
 ![platform](https://img.shields.io/badge/macOS-arm64-00a081)
 ![licence](https://img.shields.io/badge/licence-MIT-00725e)
