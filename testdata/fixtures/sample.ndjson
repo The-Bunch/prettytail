@@ -1,0 +1,5 @@
+{"event":"startup","service":"widget-api","ok":true,"retries":0,"meta":{"region":"eu-west-2","version":"3.4.1"}}
+{"event":"request","method":"GET","path":"/widgets","status":200,"duration_ms":12.5,"user":null}
+{"event":"request","method":"POST","path":"/widgets","status":201,"duration_ms":34.2,"user":"alex@example.com"}
+not a json line at all, just plain text that slipped into the stream
+{"event":"shutdown","service":"widget-api","ok":false,"retries":3,"meta":{"region":"eu-west-2","version":"3.4.1"}}

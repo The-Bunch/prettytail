@@ -1,0 +1,5 @@
+ts=2026-07-13T09:00:01Z level=info msg="widget-api starting" extra=none
+ts=2026-07-13T09:00:02Z level=debug msg="config loaded" extra="path=/etc/widget/config.yaml"
+ts=2026-07-13T09:00:05Z level=warn msg="slow downstream response" extra="elapsed_ms=812"
+ts=2026-07-13T09:00:07Z level=error msg="failed to reach payments service" extra="retry=3"
+ts=2026-07-13T09:00:08Z level=info msg="request handled" extra="status=200"

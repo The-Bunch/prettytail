@@ -1,0 +1,58 @@
+2026-03-14T09:12:04Z [32m→[0m running task build-widget in /srv/acme/widget-factory[0m
+[1;38;5;42m$[0m go build ./cmd/widgetd[0m
+09:12:05 [33m⚙ compiling[0m 42 packages[0m
+[38;5;42m✓[0m build ok (cmd/widgetd/main.go:88 linked)[0m
+[1m--- a/internal/gadget/spinner.go[0m[0m
+[1m+++ b/internal/gadget/spinner.go[0m[0m
+[38;5;44m@@ -12,7 +12,7 @@ func Spin(rpm int) error {[0m[0m
+[38;5;196m-	return fmt.Errorf("rpm too low: %d", rpm)[0m
+[38;5;42m+	return fmt.Errorf("rpm below safe floor: %d rpm", rpm)[0m
+ 	log.Printf("spinner engaged")[0m
+[38;5;196m✗[0m test FAIL internal/gadget/spinner_test.go:31: expected floor message[0m
+this line began with a broken erase escape and must render as plain text[0m
+restored config for widget-factory profile release[0m
+this is a deliberately very wide line that runs well past the eighty column re[0m
+↪ nder width so the hard-wrap path with the dim continuation arrow prefix gets e[0m
+↪ xercised properly during the golden test run[0m
+09:12:07 [31m✗ task build-widget exited 1[0m after 2.9s[0m
+next steps for the widget-factory rollout:[0m
+[2;38;5;44m•[0m verify the [1msafe floor[0m guard before shipping[0m
+[2;38;5;44m•[0m run [38;5;222mgo test ./...[0m once more[0m
+  [2;38;5;44m•[0m nested note about the spinner tolerance[0m
+[2;38;5;44m1.[0m bump the version tag[0m
+[2;38;5;44m2)[0m tag the release candidate[0m
+[2;38;5;44m•[0m ☐ draft the release notes[0m
+[2;38;5;44m•[0m [38;5;42m☑[0m update the changelog[0m
+[38;5;220m◐[0m rerun the integration suite[0m
+a **dangling bold marker and a `dangling backtick stay literal[0m
++experimental toggle stays plain outside a diff hunk[0m
+[2;38;5;44m•[0m this bullet line is deliberately long enough to wrap so the continuation row[0m
+↪ hangs under the bullet text instead of the left margin during the golden run[0m
+  [2;38;5;44m•[0m nested bullet also long enough to wrap so its continuation hangs under t[0m
+  ↪ he nested content column rather than the outer margin during the golden run[0m
+[2;38;5;44m3.[0m numbered item long enough to wrap so the continuation hangs under the item[0m
+ ↪ text past the number delimiter during the golden run[0m
+[1m## Build report for widget-factory[0m[0m
+[1;38;5;44m> assistant · claude-opus · turn 3[0m[0m
+[38;5;39m→[0m dispatch worker pool [38;5;244m[pool=4][0m[0m
+[38;5;170m←[0m reply received from widget-factory node[0m
+[38;5;44m✱[0m spawning integration sandbox[0m
+[38;5;244m==========[0m[0m
+[38;5;244mIndex: internal/gadget/spinner.go[0m[0m
+[38;5;44m@@ -20,3 +20,3 @@ func Reset() {[0m[0m
+[38;5;196m-	old reset path[0m
+[38;5;42m+	new reset path[0m
+done resetting the spinner[0m
+[2;38;5;44m•[0m [38;5;42m☑[0m [1mcompleted step[0m finished the widget rollout with [38;5;222mmake ship[0m[0m
+this is a [1mvery wide bold-pair line[0m that runs well past the eighty column rende[0m
+↪ r width so the interpreted bold survives into every hard-wrapped continuation [0m
+↪ row rather than leaving raw star markers behind on the wrapped rows[0m
+-- dashed prose lead with a [1mbold pair[0m and a [38;5;222mcode span[0m outside any hunk[0m
+[1m##### A deliberately long level-five heading that is wide enough to wrap acros[0m
+↪ [1ms the render width so its continuation rows must also render in bold not plain[0m
+↪ [1mtext[0m[0m
+[38;5;244mIndex: internal/gadget/report.go[0m[0m
+[38;5;44m@@ -30,2 +30,2 @@ func Report() {[0m[0m
+[38;5;196m-old line quoting [1mmarkdown bold[0m[38;5;196m and a [38;5;222mcode span[0m[38;5;196m inside the deletion[0m
+[38;5;42m+new line quoting [1mmarkdown bold[0m[38;5;42m and a [38;5;222mcode span[0m[38;5;42m inside the addition[0m
+ context tail closing the report hunk[0m

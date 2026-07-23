@@ -1,0 +1,5 @@
+2026-07-13T09:00:01Z INFO  widget-api starting extra=none
+2026-07-13T09:00:02Z DEBUG config loaded extra=path=/etc/widget/config.yaml
+2026-07-13T09:00:05Z WARN  slow downstream response extra=elapsed_ms=812
+2026-07-13T09:00:07Z ERROR failed to reach payments service extra=retry=3
+2026-07-13T09:00:08Z INFO  request handled extra=status=200

@@ -1,0 +1,49 @@
+2026-03-14T09:12:04Z [32m→[0m running task build-widget in /srv/acme/widget-factory
+$ go build ./cmd/widgetd
+09:12:05 [33m⚙ compiling[0m 42 packages
+✓ build ok (cmd/widgetd/main.go:88 linked)
+--- a/internal/gadget/spinner.go
++++ b/internal/gadget/spinner.go
+@@ -12,7 +12,7 @@ func Spin(rpm int) error {
+-	return fmt.Errorf("rpm too low: %d", rpm)
++	return fmt.Errorf("rpm below safe floor: %d rpm", rpm)
+ 	log.Printf("spinner engaged")
+✗ test FAIL internal/gadget/spinner_test.go:31: expected floor message
+[Kthis line began with a broken erase escape and must render as plain text
+[0mrestored config for widget-factory [38;5;81mprofile release[0m
+this is a deliberately very wide line that runs well past the eighty column render width so the hard-wrap path with the dim continuation arrow prefix gets exercised properly during the golden test run
+09:12:07 [31m✗ task build-widget exited 1[0m after 2.9s
+next steps for the widget-factory rollout:
+- verify the **safe floor** guard before shipping
+* run `go test ./...` once more
+  - nested note about the spinner tolerance
+1. bump the version tag
+2) tag the release candidate
+- [ ] draft the release notes
+- [x] update the changelog
+[•] rerun the integration suite
+a **dangling bold marker and a `dangling backtick stay literal
++experimental toggle stays plain outside a diff hunk
+- this bullet line is deliberately long enough to wrap so the continuation row hangs under the bullet text instead of the left margin during the golden run
+  - nested bullet also long enough to wrap so its continuation hangs under the nested content column rather than the outer margin during the golden run
+3. numbered item long enough to wrap so the continuation hangs under the item text past the number delimiter during the golden run
+## Build report for widget-factory
+> assistant · claude-opus · turn 3
+→ dispatch worker pool [pool=4]
+← reply received from widget-factory node
+✱ spawning integration sandbox
+==========
+Index: internal/gadget/spinner.go
+@@ -20,3 +20,3 @@ func Reset() {
+-	old reset path
++	new reset path
+done resetting the spinner
+- [x] **completed step** finished the widget rollout with `make ship`
+this is a **very wide bold-pair line** that runs well past the eighty column render width so the interpreted bold survives into every hard-wrapped continuation row rather than leaving raw star markers behind on the wrapped rows
+-- dashed prose lead with a **bold pair** and a `code span` outside any hunk
+##### A deliberately long level-five heading that is wide enough to wrap across the render width so its continuation rows must also render in bold not plain text
+Index: internal/gadget/report.go
+@@ -30,2 +30,2 @@ func Report() {
+-old line quoting **markdown bold** and a `code span` inside the deletion
++new line quoting **markdown bold** and a `code span` inside the addition
+ context tail closing the report hunk
