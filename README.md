@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/The-Bunch/.github/main/profile/assets/hellobill-logo-inverse.svg">
-  <img src="https://raw.githubusercontent.com/The-Bunch/.github/main/profile/assets/hellobill-logo-primary.svg" alt="hellobill" width="320">
+  <img src="https://raw.githubusercontent.com/The-Bunch/.github/main/profile/assets/hellobill-logo-primary.svg" alt="helloBill" width="320">
 </picture>
 
 ### Your logs, sorted.
@@ -11,7 +11,7 @@ A pretty `tail -F` for structured text. Point prettytail at a file and watch it<
 rendered beautifully in your terminal — live, as the file grows.
 
 ![release](https://img.shields.io/badge/release-v0.1.5-00725e)
-![go](https://img.shields.io/badge/go-%E2%89%A5%201.26-6ecd96)
+![go](https://img.shields.io/badge/go-%E2%89%A5%201.26-3e8e68)
 ![platform](https://img.shields.io/badge/macOS-arm64-00a081)
 ![licence](https://img.shields.io/badge/licence-MIT-00725e)
 
@@ -24,7 +24,7 @@ rendered beautifully in your terminal — live, as the file grows.
 We spend our days watching files grow — AI agents writing markdown, build tools
 streaming output, services emitting NDJSON. Raw `tail -f` on structured text is
 technically readable, in the way a phone book is technically readable. So we
-built prettytail while building [hellobill](https://hellobill.com), and it stuck.
+built prettytail while building [helloBill](https://hellobill.com), and it stuck.
 It's not our product — just a tool from the journey, released in case it's
 useful to you too.
 
@@ -195,10 +195,10 @@ green and bring a test with any new behaviour.
 
 ## Licence
 
-[MIT](LICENSE) © The Bunch Group.
+[MIT](LICENSE) © Hello Bill Limited.
 
 ---
 
 <div align="center">
-<sub>Made by <a href="https://hellobill.com">hellobill</a> · your life admin, sorted · operated by The Bunch Group</sub>
+<sub>Made by <a href="https://hellobill.com">helloBill</a> · your life admin, sorted</sub>
 </div>
